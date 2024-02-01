@@ -76,7 +76,7 @@ window.onload = function () {
       }
       for (var i = 0; i < geusses.length; i++) {
         if (counter + space === geusses.length) {
-          showLives.innerHTML = "You Win!";
+          showLives.innerHTML = "?";
           document.getElementById("hearts").style.display = "block";
         }
       }
@@ -221,6 +221,7 @@ window.onload = function () {
       letters.parentNode.removeChild(letters);
       showClue.innerHTML = "";
       context.clearRect(0, 0, 400, 400);
+      document.getElementById("hearts").style.display = "none";
       play();
     }
   }
